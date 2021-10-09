@@ -1,0 +1,98 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url("./img/pink.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header {
+  height: 30vh;
+  width: 90%;
+  border: 1px solid white;
+  margin: 20px;
+  padding: 10px;
+  text-align: center;
+}
+
+header h1 {
+  color: white;
+}
+
+header p {
+  color: white;
+}
+
+.main {
+  height: 100vh;
+  width: 100%;
+  border: 1px solid;
+  overflow-y: scroll;
+}
+
+.main--titles {
+  border: 1px solid;
+}
+
+.main--cards {
+  height: auto;
+  width: 90%;
+  margin: auto;
+}
+
+.single {
+  margin: 10px auto;
+  height: 300px;
+  border: 1px solid;
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+  width: 300px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#4760ef), to(#85ff66));
+  background-image: linear-gradient(#4760ef, #85ff66);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.single .status {
+  display: inline-block;
+  margin-bottom: 1rem;
+  padding: 3px 10px;
+  border-radius: 5px;
+  border: 1px solid white;
+  color: white;
+  text-transform: uppercase;
+}
+
+.single .character {
+  border-radius: 50%;
+  width: 160px;
+}
+
+@media (min-width: 600px) {
+  .main--cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+/*# sourceMappingURL=style.css.map */
