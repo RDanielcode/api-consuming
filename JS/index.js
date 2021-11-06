@@ -17,10 +17,10 @@ const promiseContainer = document.getElementById('promise');
 const requestApi = async (url) =>{
     try{
         const data = await fetchData(url)
-        fetchData(data.results.map(character =>{
+        data.results.map(character =>{
                     const cards = cardBuilder(character);
                     promiseContainer.appendChild(cards);
-                }))
+                })
     }
     catch (error){
         console.error(error);
